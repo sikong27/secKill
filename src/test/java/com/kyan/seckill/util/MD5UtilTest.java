@@ -2,12 +2,7 @@ package com.kyan.seckill.util;
 
 import org.junit.jupiter.api.Test;
 
-/**
- * @author Kyan27
- * @date 2024/08/19
- */
 public class MD5UtilTest {
-
     @Test
     public void inputPassToMidPassTest() {
         String s = "123456";
