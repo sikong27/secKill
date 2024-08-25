@@ -9,6 +9,7 @@ import com.kyan.seckill.util.ValidatorUtil;
 import com.kyan.seckill.vo.LoginVo;
 import com.kyan.seckill.vo.RspBean;
 import com.kyan.seckill.vo.RspBeanEnum;
+import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
 import javax.annotation.Resource;
@@ -20,6 +21,7 @@ import javax.servlet.http.HttpServletResponse;
  * @date 2024/08/22
  * ServiceImpl已实现许多CRUD方法
  */
+@Service
 public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements UserService {
 
     @Resource
