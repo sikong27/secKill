@@ -14,8 +14,9 @@ public class MD5UtilTest {
     public void inputPassToDBPassTest() {
         String s = "123456";
         String midPass = MD5Util.inputPassToMidPass(s);
-        String dbPass = MD5Util.midPassToDBPass(midPass, "1a2b3c4d");
+        System.out.println(midPass);
+        String dbPass = MD5Util.midPassToDBPass(midPass, "0XnBM0iG");
         System.out.println(dbPass);
-        System.out.println(MD5Util.inputPassToDBPass(s, "1a2b3c4d"));
+        System.out.println(MD5Util.inputPassToDBPass(s, "0XnBM0iG"));
     }
 }

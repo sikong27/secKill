@@ -20,7 +20,7 @@ public class MD5Util {
     }
 
     //盐，后端写死
-    private static final String SALT = "3I0LzeUmkf";
+    private static final String SALT = "8kNpWGSh";
 
     /**
      * 第一次加盐加密
@@ -28,7 +28,7 @@ public class MD5Util {
      * @return {@link String } 中间密码
      */
     public static String inputPassToMidPass(String inputPass) {
-        return md5(SALT.charAt(3) + inputPass + SALT + SALT.charAt(2));
+        return md5(SALT.charAt(0) + inputPass + SALT.charAt(6));
     }
 
     /**
