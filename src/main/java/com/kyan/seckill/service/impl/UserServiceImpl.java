@@ -44,7 +44,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         //查询DB，查询用户是否存在
         User user = userMapper.selectById(mobile);
         if (user == null) {
-            return RspBean.error(RspBeanEnum.LOGIN_ERROR);
+            return RspBean.error(RspBeanEnum.MOBILE_NOT_EXIST);
         }
         //校验密码，loginVo中的密码是中间密码
         if (!MD5Util.midPassToDBPass(password, user.getSalt()).equals(user.getPassword())) {

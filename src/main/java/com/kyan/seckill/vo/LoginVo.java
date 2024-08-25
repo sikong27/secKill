@@ -11,6 +11,7 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class LoginVo {
+    //这里的字段名需要和login.html的“url: "/login/doLogin"”中定义的一致
     private String mobile;
     private String password;
 }
