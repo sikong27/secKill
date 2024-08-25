@@ -298,6 +298,7 @@
                 mobile: $("#mobile").val(),
                 password: password
             },
+            // 这里的成功是成功拿到结果，而不是成功验证的意思。结果还不知道呢
             success: function (data) {
                 if (data.code == 200) {
                     // alert(data.message)
